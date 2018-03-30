@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		614B5E9C2B989DFDDD38D6B7 /* Pods_CuckooSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A445C44CC484E91DD47267A /* Pods_CuckooSample.framework */; };
+		D7416E84346D9CD25DAF9760 /* Pods_CuckooSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CE311F389F8EDEB51CEAF7 /* Pods_CuckooSampleTests.framework */; };
+		DC4140D2206DCC6E005B8668 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4140D1206DCC6E005B8668 /* UserRepository.swift */; };
+		DC4140D4206DD354005B8668 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4140D3206DD354005B8668 /* GeneratedMocks.swift */; };
 		DCAF8786206CE92400C0C041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF8785206CE92400C0C041 /* AppDelegate.swift */; };
 		DCAF8788206CE92400C0C041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF8787206CE92400C0C041 /* ViewController.swift */; };
 		DCAF878B206CE92500C0C041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF8789206CE92500C0C041 /* Main.storyboard */; };
@@ -26,6 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B904925D80267C54EC704FD /* Pods-CuckooSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuckooSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuckooSample/Pods-CuckooSample.release.xcconfig"; sourceTree = "<group>"; };
+		0EDCD55A2E9E16751265D41C /* Pods-CuckooSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuckooSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuckooSampleTests/Pods-CuckooSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88CE311F389F8EDEB51CEAF7 /* Pods_CuckooSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuckooSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A445C44CC484E91DD47267A /* Pods_CuckooSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuckooSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D1C8683C04C44E6C614B1B /* Pods-CuckooSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuckooSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuckooSampleTests/Pods-CuckooSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8DBF74F5C5173DCA673D246 /* Pods-CuckooSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuckooSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuckooSample/Pods-CuckooSample.debug.xcconfig"; sourceTree = "<group>"; };
+		DC4140D1206DCC6E005B8668 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		DC4140D3206DD354005B8668 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		DCAF8782206CE92400C0C041 /* CuckooSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuckooSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAF8785206CE92400C0C041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCAF8787206CE92400C0C041 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614B5E9C2B989DFDDD38D6B7 /* Pods_CuckooSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +63,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7416E84346D9CD25DAF9760 /* Pods_CuckooSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ECFF2B84DB1FFE4605EB244 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8DBF74F5C5173DCA673D246 /* Pods-CuckooSample.debug.xcconfig */,
+				0B904925D80267C54EC704FD /* Pods-CuckooSample.release.xcconfig */,
+				0EDCD55A2E9E16751265D41C /* Pods-CuckooSampleTests.debug.xcconfig */,
+				A6D1C8683C04C44E6C614B1B /* Pods-CuckooSampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DCAF8779206CE92400C0C041 = {
 			isa = PBXGroup;
 			children = (
 				DCAF8784206CE92400C0C041 /* CuckooSample */,
 				DCAF8799206CE92500C0C041 /* CuckooSampleTests */,
 				DCAF8783206CE92400C0C041 /* Products */,
+				4ECFF2B84DB1FFE4605EB244 /* Pods */,
+				EB0BC5AF8C0C5B396313C8E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +104,7 @@
 		DCAF8784206CE92400C0C041 /* CuckooSample */ = {
 			isa = PBXGroup;
 			children = (
+				DC4140D1206DCC6E005B8668 /* UserRepository.swift */,
 				DCAF8785206CE92400C0C041 /* AppDelegate.swift */,
 				DCAF8787206CE92400C0C041 /* ViewController.swift */,
 				DCAF8789206CE92500C0C041 /* Main.storyboard */,
@@ -90,10 +118,20 @@
 		DCAF8799206CE92500C0C041 /* CuckooSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				DC4140D3206DD354005B8668 /* GeneratedMocks.swift */,
 				DCAF879A206CE92500C0C041 /* CuckooSampleTests.swift */,
 				DCAF879C206CE92500C0C041 /* Info.plist */,
 			);
 			path = CuckooSampleTests;
+			sourceTree = "<group>";
+		};
+		EB0BC5AF8C0C5B396313C8E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A445C44CC484E91DD47267A /* Pods_CuckooSample.framework */,
+				88CE311F389F8EDEB51CEAF7 /* Pods_CuckooSampleTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCAF879F206CE92500C0C041 /* Build configuration list for PBXNativeTarget "CuckooSample" */;
 			buildPhases = (
+				FA4874610202E6FB78E9C410 /* [CP] Check Pods Manifest.lock */,
 				DCAF877E206CE92400C0C041 /* Sources */,
 				DCAF877F206CE92400C0C041 /* Frameworks */,
 				DCAF8780206CE92400C0C041 /* Resources */,
+				DBCD590BB9B6F0CBF26E2E33 /* [CP] Embed Pods Frameworks */,
+				C15CC66C2F1F547D81079D43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +161,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCAF87A2206CE92500C0C041 /* Build configuration list for PBXNativeTarget "CuckooSampleTests" */;
 			buildPhases = (
+				ABC673FD8B3DD25A9A0FC848 /* [CP] Check Pods Manifest.lock */,
 				DCAF8792206CE92500C0C041 /* Sources */,
 				DCAF8793206CE92500C0C041 /* Frameworks */,
 				DCAF8794206CE92500C0C041 /* Resources */,
+				298F586CA53B0CF654E7E5A0 /* [CP] Embed Pods Frameworks */,
+				38778F18F47A19EC5BB7E47F /* [CP] Copy Pods Resources */,
+				DC4140D5206DD570005B8668 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +239,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		298F586CA53B0CF654E7E5A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuckooSampleTests/Pods-CuckooSampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38778F18F47A19EC5BB7E47F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuckooSampleTests/Pods-CuckooSampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABC673FD8B3DD25A9A0FC848 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CuckooSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C15CC66C2F1F547D81079D43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuckooSample/Pods-CuckooSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBCD590BB9B6F0CBF26E2E33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CuckooSample/Pods-CuckooSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuckooSample/Pods-CuckooSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC4140D5206DD570005B8668 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/CuckooSample/UserRepository.swift",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\"";
+		};
+		FA4874610202E6FB78E9C410 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CuckooSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCAF877E206CE92400C0C041 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -201,6 +362,7 @@
 			files = (
 				DCAF8788206CE92400C0C041 /* ViewController.swift in Sources */,
 				DCAF8786206CE92400C0C041 /* AppDelegate.swift in Sources */,
+				DC4140D2206DCC6E005B8668 /* UserRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAF879B206CE92500C0C041 /* CuckooSampleTests.swift in Sources */,
+				DC4140D4206DD354005B8668 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +514,7 @@
 		};
 		DCAF87A0206CE92500C0C041 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8DBF74F5C5173DCA673D246 /* Pods-CuckooSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +529,7 @@
 		};
 		DCAF87A1206CE92500C0C041 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B904925D80267C54EC704FD /* Pods-CuckooSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +544,7 @@
 		};
 		DCAF87A3206CE92500C0C041 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EDCD55A2E9E16751265D41C /* Pods-CuckooSampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -395,6 +561,7 @@
 		};
 		DCAF87A4206CE92500C0C041 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6D1C8683C04C44E6C614B1B /* Pods-CuckooSampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

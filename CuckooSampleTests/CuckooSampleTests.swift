@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import CuckooSample
+import Cuckoo
 
 class CuckooSampleTests: XCTestCase {
     
@@ -24,6 +25,14 @@ class CuckooSampleTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let mock = MockUserRepository()
+        
+        stub(mock) { stub in
+            when(stub.getName(id: anyInt())).thenReturn("stub name")
+            when(stub.getAge(id: anyInt())).thenReturn(18)
+        }
+        XCTAssertEqual(mock.getName(id: 1), "stub name")
+        XCTAssertEqual(mock.getAge(id: 1), 18)
     }
     
     func testPerformanceExample() {
