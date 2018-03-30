@@ -9,8 +9,11 @@
 import XCTest
 @testable import CuckooSample
 import Cuckoo
+import APIKit
 
 class CuckooSampleTests: XCTestCase {
+    
+    let expectation = XCTestExpectation(description: "Test")
     
     override func setUp() {
         super.setUp()
@@ -30,9 +33,23 @@ class CuckooSampleTests: XCTestCase {
         stub(mock) { stub in
             when(stub.getName(id: anyInt())).thenReturn("stub name")
             when(stub.getAge(id: anyInt())).thenReturn(18)
+            when(stub.fetch(success: anyClosure(), fail: anyClosure())).then({ (args) in
+                let (success, _) = args
+                success(UserResponse(success: true, user: User(name: "taro", age: 20)))
+            })
         }
         XCTAssertEqual(mock.getName(id: 1), "stub name")
         XCTAssertEqual(mock.getAge(id: 1), 18)
+        mock.fetch(
+            success: { response in
+                dump(response)
+                self.expectation.fulfill()
+            },
+            fail: { error in
+                dump(error)
+            }
+        )
+        self.wait(for: [self.expectation], timeout: 10.0)
     }
     
     func testPerformanceExample() {

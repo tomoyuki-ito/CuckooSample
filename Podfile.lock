@@ -1,12 +1,18 @@
 PODS:
+  - APIKit (3.2.1):
+    - Result (~> 3.0)
   - Cuckoo (0.10.2)
+  - Result (3.2.4)
 
 DEPENDENCIES:
+  - APIKit
   - Cuckoo
 
 SPEC CHECKSUMS:
+  APIKit: a39ff72ac44efc15513fd1b98800f63c525be61b
   Cuckoo: e53c52f97edfea8142da66a95400ca5897e22c8b
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: 3201c29862e13d6d26c6e90b45220fe1466518ca
+PODFILE CHECKSUM: 2bbea6554e01e33b36f28879c3c3feca1b81704e
 
 COCOAPODS: 1.4.0

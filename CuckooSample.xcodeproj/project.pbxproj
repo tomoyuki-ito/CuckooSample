@@ -161,13 +161,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCAF87A2206CE92500C0C041 /* Build configuration list for PBXNativeTarget "CuckooSampleTests" */;
 			buildPhases = (
+				DC4140D5206DD570005B8668 /* ShellScript */,
 				ABC673FD8B3DD25A9A0FC848 /* [CP] Check Pods Manifest.lock */,
 				DCAF8792206CE92500C0C041 /* Sources */,
 				DCAF8793206CE92500C0C041 /* Frameworks */,
 				DCAF8794206CE92500C0C041 /* Resources */,
 				298F586CA53B0CF654E7E5A0 /* [CP] Embed Pods Frameworks */,
 				38778F18F47A19EC5BB7E47F /* [CP] Copy Pods Resources */,
-				DC4140D5206DD570005B8668 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -310,11 +310,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CuckooSample/Pods-CuckooSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

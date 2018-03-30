@@ -7,6 +7,7 @@ target 'CuckooSample' do
 
   # Pods for CuckooSample
   pod "Cuckoo"
+  pod "APIKit"
 
   target 'CuckooSampleTests' do
     inherit! :search_paths
